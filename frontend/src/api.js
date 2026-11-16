@@ -1,4 +1,6 @@
-const BASE_URL = "http://localhost:8000";
+// In production (Vercel), VITE_API_URL is set to the Render backend URL.
+// In local development, it falls back to localhost.
+const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 // Wraps fetch with a timeout. If the server takes longer than `ms`, the
 // request is cancelled and an error is thrown instead of hanging forever.
