@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# React / Node.js
+node_modules/
+dist/
+
+# macOS
+.DS_Store
+
+# IDE and editor tools
+.vscode/
+.idea/
+.cursor/
