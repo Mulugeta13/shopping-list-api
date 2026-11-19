@@ -14,10 +14,9 @@ app = FastAPI(title="Shopping List API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",                    # local Vite dev server
-        "https://shopping-list-api-ujr4.onrender.com",  # Render backend (health checks)
+        "http://localhost:5173",
+        "https://shopping-list-frontend-mo1z.onrender.com",
     ],
-    allow_origin_regex=r"https://.*\.vercel\.app",  # any Vercel preview or production URL
     allow_methods=["*"],
     allow_headers=["*"],
 )
